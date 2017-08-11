@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>My First HTML</title>
+</head>
+<body>
+<a href="blog.html">Go to g4e blog</a>
+<br>
+<hr>
+<!--headings-->
+	Hello world I'm <strong>Rajat Mathew</strong>
+This html file will show you the basic tags and attributes of html files(<em>Comments included</em>)
+	<h1>Hello world one</h1>
+	<h2>Hello world two</h2>
+	<h3>Hello world three</h3>
+	<h4>Hello world four</h4>
+	<h5>Hello world five</h5>
+	<h6>Hello world six</h6>
+	<!--only 6 of them works-->
+	
+	<h7>Hello world seven(not showed as headings)</h7>
+
+<!--paragraphs-->
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat accusantium, numquam sint rem recusandae <strong><!--bold text--><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat accusantium, numquam sint rem recusandae <strong></strong>veritatis, alias veniam nobis minima molestiae eligendi doloremque, officia. Odio error eius animi, cumque? Et, porro.</p>
+</strong>veritatis, alias veniam nobis minima molestiae eligendi doloremque, officia. Odio error eius animi, cumque? Et, porro.</p>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit voluptatibus corrupti inventore consequuntur! Deleniti culpa, in illum nihil, alias labore iste non blanditiis ullam, esse natus necessitatibus sit officiis quia!</p>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur vitae id at asperiores quas assumenda veniam odio itaque et ipsa, voluptatem minus sequi voluptate molestiae placeat quos adipisci, dignissimos nisi.</p>
+
+<em>Age Quod Agis</em><!--emphasized text(italics)-->
+
+<!--Using line break br-->
+<
+<strong>Here are the links which open in the same tab</strong>
+<p>
+<a href="http://www.google.com">Google</a>
+<a href="http://www.play.google.com">Google play</a>
+<a href="http://www.youtube.com">YouTube</a>
+<a href="http://www.facebook.com">FaceBook</a>
+</p>
+
+<!--Without using line break br-->
+<strong>Here are the links which open up in a new tab</strong>
+<p>
+<a href="http://www.google.com" target="_blank">Google</a><br>
+<a href="http://www.play.google.com" target="_blank">Google play</a><br>
+<a href="http://www.youtube.com" target="_blank">YouTube</a><br>
+<a href="http://www.facebook.com" target="_blank">FaceBook</a><br>
+</p>
+
+<strong>Here are some html links which does not require an internet connection</strong>
+<a href="about.html">about us</a>
+<a href="contact.html">contact</a>
+
+<!--Lists-->
+<!--Ordered Lists-->
+<ul>
+	<li>List Item1</li>
+	<li>List Item2</li>
+	<li>List Item3</li>
+	<li>List Item4</li>
+
+</ul>
+<!--Unordered Lists-->
+<ol>
+	<li>List Item1</li>
+	<li>List Item2</li>
+	<li>List Item3</li>
+	<li>List Item4</li>
+
+</ol>
+
+<!--Tables-->
+<table>
+	<thead><!-- table heading -->
+		<tr><!-- table row -->
+			<th>Name</th><!-- th means table headings(will be in dark color) -->
+			<th>Email</th>
+			<th>Age</th>
+
+		</tr>
+	</thead>
+
+	<tbody>
+		<tr><!-- table row -->
+			<td>Rajat Mathew</td><!-- table data -->
+			<td>rajatmathew2512@gmail.com</td>
+			<td>16</td>
+		</tr>
+		<tr><!-- table row -->
+			<td>frgkrhgkdjfhgjdg</td><!-- table data -->
+			<td>rajatmathew2512@gmail.com</td>
+			<td>16</td>
+		</tr>
+		<tr><!-- table row -->
+			<td>Rajat Mathew</td><!-- table data -->
+			<td>rhkjrshtjhwvkjrbfjhsgkjrgj</td>
+			<td>16</td>
+		</tr>
+		<tr><!-- table row -->
+			<td>Rajat Mathew</td><!-- table data -->
+			<td>rajatmathew2512@gmail.com</td>
+			<td>16</td>
+		</tr>
+		<tr><!-- table row -->
+			<td>Rajat Mathew</td><!-- table data -->
+			<td>rajatmathew2512@gmail.com</td>
+			<td>fkjhrjkgrjraeuiu</td>
+		</tr>
+	</tbody>
+	</table>
+<br>
+<hr><!-- horizontal rule(separator) -->
+	<!--Forms-->
+	<form action="process.php" method="POST">
+		<label>First name</label>
+		<input type="text" name="first-name" >
+		<label>Last name</label>
+		<input type="text" name="last-name" >
+
+	</form>
+	<hr>
+	<!-- Form with more style -->
+	<form action="process.php" method="POST">
+	<div>
+		<label>First name</label>
+		<input type="text" name="first-name" value="enter first name" ><!--value- default text in the field -->
+		</div>
+		<br>
+		<div>
+		<label>Last name</label>
+		<input type="text" name="last-name" placeholder="Enter last name" ><!--placeholder - a new method adopted in html5 instead of the value tag mentione d before (light greyish cloured text) -->
+		</div>
+		<div>
+		<br>
+		<label>Email</label>
+		<input type="email" name="email" >
+		</div>
+		<br>
+		<div>
+		<label>Message</label>
+		<textarea name="message"></textarea>
+		</div>
+
+		<div>
+		<label>Gender</label>
+		<select name="gender">
+		<option value="male">Male</option>
+		<option value="female">Female</option>
+		<option value="other">Other</option>	
+		</div>
+
+		<div>
+		<label>Age</label>
+		<input type="number" name="age" value="30" ><!-- default value in the text field -->
+		</div>
+
+		<div>
+		<label>Birthday</label>
+		<input type="date" name="birthday" >
+		</div>
+
+		<input type="submit" name="submit" value="Submit">
+		
+		</form>
+		<button>Click Me</button>
+		<br>
+
+		<!-- IMages -->
+		<img src="images/Google.jpg">
+		<br>
+		<img src="images/Apple.jpg" alt=""Apple_logo><!-- the alt tag will work if the image is missing -->
+		<br>
+		<img src="images/Google.jpg" width="200">
+
+		<a href="images/Google.jpg" target="_blank">
+		<img src="images/Google.jpg" width="200">
+			</a><!-- image with hyperlink -->
+
+			<!-- Quotaions -->
+		<blockquote cite="http://www.traversmedia.com"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora dolorem blanditiis vero labore voluptatem incidunt ipsa facilis iste obcaecati similique alias, repudiandae minima earum sint aut, rem voluptatibus dolore omnis.</blockquote><!-- the value insidet the cite attribute shows only inside the source code.It says that the quote comes from the specific website -->
+
+		<p>The <abbr title="World wide web"> WWW </abbr>is awesome</p>
+
+		<p><cite>HTML Crash course</cite> by brad traversy</p>
+
+
+
+
+
+
+
+<div style="margin-top:500px"></div><!--leaves a margin with the size of 500 px-->
+
+</ul>
+</body>
+</html>
